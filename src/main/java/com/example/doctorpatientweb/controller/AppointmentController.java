@@ -16,11 +16,11 @@ public class AppointmentController {
     @PostMapping("/book/{patientId}")
     public Appointment bookAppointment(
             @PathVariable Long patientId,
-            @RequestParam LocalDate date) {   // ✅ directly LocalDate
+            @RequestParam LocalDate date) {
         return appointmentService.bookAppointment(patientId, date);
     }
     @GetMapping("/{patientId}")
-    public Appointment bookeddate(@PathVariable Long patientId){   // ✅ directly LocalDate
+    public Appointment bookeddate(@PathVariable Long patientId){
         return appointmentService.bookeddate(patientId);
     }
 }

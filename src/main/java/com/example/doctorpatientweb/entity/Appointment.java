@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
 
-@Data          // generates all getters & setters
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -17,7 +17,7 @@ import java.time.LocalDate;
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "appointment_id") // map to existing column
+    @Column(name = "appointment_id")
     private Long id;
 
     @Column(name = "appointment_date", nullable = false)

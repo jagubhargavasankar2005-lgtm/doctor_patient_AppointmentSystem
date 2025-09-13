@@ -19,7 +19,5 @@ public interface PatientService {
     Patient updatePatientPartially(Long id, Patient partialPatient);
 
 
-    //void deleteById(Long id);
-
     Map<String, Object> deleteByName(String name);
 }

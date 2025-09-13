@@ -1,4 +1,3 @@
-// AppointmentDto.java
 package com.example.doctorpatientweb.dto;
 
 import java.time.LocalDate;
