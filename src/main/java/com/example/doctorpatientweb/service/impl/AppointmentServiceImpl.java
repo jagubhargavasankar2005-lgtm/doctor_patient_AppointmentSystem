@@ -88,8 +88,6 @@ public class AppointmentServiceImpl implements AppointmentService {
             System.out.println("No appointment booked for patient ID: " + patientId);
             return null;
         }
-
-        // 3️⃣ Map to AppointmentDto
         AppointmentDto appointmentDto = new AppointmentDto();
         appointmentDto.setAppointmentDate(appointment.getAppointmentDate());
 
